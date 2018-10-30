@@ -43,7 +43,8 @@ public class MoleHole: MonoBehaviour {
         {
             active = false;
             Destroy(moleObject);
-            this.moleObject = Instantiate(moleHitPrefab, transform.position, Quaternion.identity).gameObject;
+            GameManager.score++;
+            //this.moleObject = Instantiate(moleHitPrefab, transform.position, Quaternion.identity).gameObject;
         }
         else if (timeLeft < 0 && active == true && hit == false)
         {

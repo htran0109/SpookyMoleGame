@@ -50,11 +50,11 @@ public class PlayerControl : MonoBehaviour {
         if (Input.GetButtonDown("Attack") && currMoleHole.active)
         {
             currMoleHole.hit = true;
-            Debug.Log("Hit!");
+            //Debug.Log("Hit!");
         }
         if(Input.GetButtonDown("Attack"))
         {
-            Debug.Log("Attacked " + playerDirection);
+            //Debug.Log("Attacked " + playerDirection);
         }
     }
 }
